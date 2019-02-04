@@ -1,0 +1,108 @@
+@import url(https://lolstatic-a.akamaihd.net/awesomefonts/1.0.0/lol-fonts.css);
+
+body {
+
+}
+
+body{
+    font-family: Beaufort for LOL,serif;
+    letter-spacing: .03em;
+    color: #f0e6d2;
+    background-color: black;
+}
+body > *{
+    background-color: transparent;
+    font-weight: 500;
+    font-size: 22px;
+}
+
+* {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+main{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+}
+
+h1{
+    font-size: 80px;
+    text-align: center;
+}
+
+h2{
+    font-size: 60px;
+    text-align: center;
+}
+
+h3{
+    font-size:40px;
+}
+
+.subtitle{
+    color: #a3997e;
+    margin-top:10px;
+    font-size:16px;
+}
+
+section{
+    max-width: 720px;
+    margin: 70px auto 0;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p {
+    text-indent: 30px;
+}
+
+.bgimg{
+    background-size: cover;
+    z-index: -1;
+    width: 100vw;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.sideimg{
+    width: 40%
+}
+
+.quoteimg{
+    max-width: initial; 
+    width:100%; 
+    height:60vw;
+    background-size: cover; 
+    position:relative; 
+    background-position: center center;
+    padding: 0 0 0 0;
+}
+
+.quotetext{
+    text-indent: 0px;
+    text-align: center;
+    padding-top: 20vw;
+    margin-bottom: 10px;
+    font-size:6vw;
+    color: #e79c62;
+    font-weight: 700;
+    text-shadow:2px 2px 0 #444;
+    padding-left:30px;
+    padding-right:30px;
+}
+.quotesource{
+    text-align:center;
+    margin-top:5px;
+    font-size: 2vw;
+    text-shadow:2px 2px 0 #444;
+}
+.ahritext{
+    background: -webkit-linear-gradient( #CC46BB, #d87aca);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: initial;
+}
