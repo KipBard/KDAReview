@@ -1,19 +1,21 @@
 @import url(https://lolstatic-a.akamaihd.net/awesomefonts/1.0.0/lol-fonts.css);
 
-body {
-
+:root {
+    --bg-color: #1a1d21;
 }
 
 body{
     font-family: Beaufort for LOL,serif;
     letter-spacing: .03em;
     color: #f0e6d2;
-    background-color: black;
+    background-color: var(--bg-color);
+    margin: 0;
 }
 body > *{
     background-color: transparent;
     font-weight: 500;
     font-size: 22px;
+    margin: 0;
 }
 
 * {
@@ -73,26 +75,71 @@ p {
 }
 
 .quoteimg{
-    max-width: initial; 
-    width:100%; 
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    position: absolute;
+    filter: brightness(70%) blur(2px);
+    
+}
+
+.quoteSection{
+    padding: 0;
     height:60vw;
-    background-size: cover; 
-    position:relative; 
-    background-position: center center;
-    padding: 0 0 0 0;
+    position:relative;
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/*Adds the little fading black gradients at bottom and top*/
+/*The div is only rendered if it has "content" so we give it a fake one hehe*/
+
+:root{
+    --bar-size:calc(100%/4);
+}
+
+/*Bottom one*/
+.quoteSection::after{
+    background-image:linear-gradient(transparent, var(--bg-color));
+    position: absolute;
+    width: 100%;
+    height: var(--bar-size);
+    bottom: 0px;
+    z-index: -1;
+    
+    content: " "
+}
+/*Top one*/
+.quoteSection::before{
+    background-image:linear-gradient(var(--bg-color), transparent);
+    position: absolute;
+    width: 100%;
+    height: var(--bar-size);
+    z-index: -1;
+    
+    content: " "
 }
 
 .quotetext{
     text-indent: 0px;
     text-align: center;
-    padding-top: 20vw;
+    padding-top: 16vw;
     margin-bottom: 10px;
     font-size:6vw;
     color: #e79c62;
     font-weight: 700;
-    text-shadow:2px 2px 0 #444;
+    /*text-shadow:2px 2px 0 #444;*/
     padding-left:30px;
     padding-right:30px;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000; 
 }
 .quotesource{
     text-align:center;
@@ -100,9 +147,15 @@ p {
     font-size: 2vw;
     text-shadow:2px 2px 0 #444;
 }
-.ahritext{
-    background: -webkit-linear-gradient( #CC46BB, #d87aca);
+
+.quoteSection.ahri> p.quotetext{
+    color: #e1d291;
+}
+
+.ahritext2{
+    /*background: -webkit-linear-gradient( #CC46BB, #e275d2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-shadow: initial;
+    text-shadow: none;*/
+    color: #e275d2;
 }
