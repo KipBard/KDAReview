@@ -68,6 +68,8 @@ section.title{
     display:flex;
     align-items:center;
     justify-content: center;
+    /*This makes the viewer won't be able to scroll through this div*/
+    overflow:hidden;
 }
 
 section.title > img.titleimg{
