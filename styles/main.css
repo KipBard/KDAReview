@@ -56,6 +56,8 @@ section{
     margin: 0 auto 0;
     padding-left: 20px;
     padding-right: 20px;
+    /*To make sure "background images" won't overlap other divs*/
+    z-index: 0;
 }
 
 section.title{
@@ -64,6 +66,7 @@ section.title{
     position: relative;
     width: 100vw;
     max-width: none;
+    box-shadow:0 8px 8px #000;
     /*This is done to center the text verticaly & horizontally*/
     display:flex;
     align-items:center;
@@ -121,6 +124,7 @@ p {
     max-width: 100%;
     width: 100%;
     overflow: hidden;
+    
 }
 
 
@@ -178,7 +182,13 @@ p {
     text-shadow:2px 2px 0 #444;
 }
 
-.quoteSection.ahri> p.quotetext{
+/*Ahri*/
+
+section.ahri.stars > p{
+    margin-left: 200px;
+}
+
+.quoteSection.ahri > p.quotetext{
     color: #e1d291;
 }
 
@@ -188,4 +198,18 @@ p {
     -webkit-text-fill-color: transparent;
     text-shadow: none;*/
     color: #e275d2;
+}
+
+section.ahri.stars > h3{
+    text-align: center;
+}
+
+section.ahri.stars > img.sideimg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    
+    filter: saturate(0.1) brightness(40%);
+    left: -34vw;
+    transform: scale(2) translateY(5vw);
 }
