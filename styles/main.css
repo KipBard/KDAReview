@@ -32,8 +32,10 @@ main{
 }
 
 h1{
-    font-size: 80px;
+    font-size: 15vw;
     text-align: center;
+    margin:0;
+    margin-top: 25vw;
 }
 
 h2{
