@@ -182,10 +182,38 @@ p {
     text-shadow:2px 2px 0 #444;
 }
 
+section.stars > img.sideimg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    
+    filter: saturate(0.1) brightness(40%);
+}
+
 /*Ahri*/
 
-section.ahri.stars > p{
-    margin-left: 200px;
+/*When the screen is small*/
+@media screen and (max-width: 720px){
+    section.ahri.stars > img.sideimg{
+        width: 500%;
+        left: -200vw;
+        transform: translateY(-55vw);
+    }
+}
+
+@media screen and (min-width: 720px){
+    section.ahri.stars > p{
+        margin-left: 200px;
+    }
+
+    section.ahri.stars > h3{
+        text-align: center;
+    }
+
+    section.ahri.stars > img.sideimg{
+        left: -34vw;
+        transform: scale(2) translateY(5vw);
+    }
 }
 
 .quoteSection.ahri > p.quotetext{
@@ -193,43 +221,35 @@ section.ahri.stars > p{
 }
 
 .ahritext2{
-    /*background: -webkit-linear-gradient( #CC46BB, #e275d2);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;*/
     color: #e275d2;
 }
 
-section.ahri.stars > h3{
-    text-align: center;
-}
 
-section.ahri.stars > img.sideimg{
-    width: 100%;
-    position: absolute;
-    z-index: -1;
-    
-    filter: saturate(0.1) brightness(40%);
-    left: -34vw;
-    transform: scale(2) translateY(5vw);
-}
 
 /*Akali*/
 
-section.akali.stars > p{
-    margin-right: 200px;
+@media screen and (min-width: 720px){
+    section.akali.stars > p{
+        margin-right: 200px;
+    }
+    section.akali.stars > h3{
+        text-align: center;
+    }
 }
 
-section.akali.stars > h3{
-    text-align: center;
-}
-
+/*When the screen is small*/
+@media screen and (max-width: 720px){
 section.akali.stars > img.sideimg{
-    width: 100%;
-    position: absolute;
-    z-index: -1;
+    width: 500%;
+    left: -200vw;
+    transform: translateY(-55vw);
+}
+}
 
-    filter: saturate(0.1) brightness(40%);
-    left:27vw;
-    transform: scale(2) translateY(6vw);
+/*When the screen is big*/
+@media screen and (min-width: 720px){
+    section.akali.stars > img.sideimg{
+        left:27vw;
+        transform: scale(2) translateY(6vw);
+    }
 }
