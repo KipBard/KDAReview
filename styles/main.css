@@ -75,7 +75,6 @@ section.title{
 section.title > img.titleimg{
     object-fit: cover;
     width: 100%;
-    height: 200%;
     z-index: -2;
     position: absolute;
     filter: none;
@@ -83,7 +82,7 @@ section.title > img.titleimg{
 
 section.title.stars > img.titleimg{
     transform: scale(1.5);
-    top: 20%;
+    top: 0%;
     filter: brightness(40%);
 }
 
