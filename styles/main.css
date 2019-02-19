@@ -213,3 +213,23 @@ section.ahri.stars > img.sideimg{
     left: -34vw;
     transform: scale(2) translateY(5vw);
 }
+
+/*Akali*/
+
+section.akali.stars > p{
+    margin-right: 200px;
+}
+
+section.akali.stars > h3{
+    text-align: center;
+}
+
+section.akali.stars > img.sideimg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+
+    filter: saturate(0.1) brightness(40%);
+    left:27vw;
+    transform: scale(2) translateY(6vw);
+}
