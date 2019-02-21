@@ -192,6 +192,12 @@ section.stars > img.sideimg{
     filter: saturate(0.1) brightness(40%);
 }
 
+section.stars > p, .intro > p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
 /*Ahri*/
 
 /*When the screen is small*/
