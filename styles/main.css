@@ -68,7 +68,7 @@ section.title{
     position: relative;
     width: 100vw;
     max-width: none;
-    box-shadow:0 8px 8px #000;
+    box-shadow:0 8px 8px #000, 0 -8px 8px #000;
     /*This is done to center the text verticaly & horizontally*/
     display:flex;
     align-items:center;
@@ -126,7 +126,7 @@ p {
     max-width: 100%;
     width: 100%;
     overflow: hidden;
-    
+    box-shadow:0 8px 8px #000, 0 -8px 8px #000;
 }
 
 
