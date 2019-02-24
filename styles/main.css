@@ -143,7 +143,7 @@ p {
     position: absolute;
     width: 100%;
     height: var(--bar-size);
-    bottom: 0px;
+    bottom: -1px;
     z-index: -1;
     
     content: " "
@@ -271,7 +271,7 @@ section.stars > p, .intro > p{
 
 .quoteSection.evelynn > img.quoteimg {
     transform: scale(1.3) translateX(7vw);
-    filter: brightness(100%) blur(3px);
+    filter: brightness(100%) blur(3px) saturate(0.6);
 }
 
 .evelynn > .quotetext {
