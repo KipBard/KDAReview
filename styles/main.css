@@ -261,3 +261,41 @@ section.akali.stars > img.sideimg{
         transform: scale(2) translateY(6vw);
     }
 }
+
+
+/*Evelynn*/
+
+.quoteSection.evelynn > img.quoteimg {
+    transform: scale(1.3) translateX(7vw);
+    filter: brightness(100%) blur(3px);
+}
+
+.evelynn > .quotetext {
+    color: #b319b3;
+}
+
+@media screen and (min-width: 720px){
+    section.evelynn.stars > p{
+        margin-left: 200px;
+    }
+    section.evelynn.stars > h3{
+        text-align: center;
+    }
+}
+
+/*When the screen is small*/
+@media screen and (max-width: 720px){
+    section.evelynn.stars > img.sideimg{
+    width: 500%;
+    left: -200vw;
+    transform: translateY(-55vw);
+    }
+}
+
+/*When the screen is big*/
+@media screen and (min-width: 720px){
+    section.evelynn.stars > img.sideimg{
+        left: -39vw;
+        transform: scale(2) translateY(6vw);
+    }
+}
