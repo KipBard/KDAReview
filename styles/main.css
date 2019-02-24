@@ -299,3 +299,22 @@ section.akali.stars > img.sideimg{
         transform: scale(2) translateY(6vw);
     }
 }
+
+
+/*Kai'sa*/
+
+@media screen and (min-width: 720px){
+    section.kaisa.stars > p{
+        margin-right: 200px;
+    }
+    section.kaisa.stars > h3{
+        text-align: center;
+    }
+}
+
+
+.kaisa > .quotetext{
+    padding-top: 8vw;
+    padding-left: 0px;
+    padding-right: 40px;
+}
