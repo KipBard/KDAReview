@@ -210,15 +210,15 @@ section.stars > p, .intro > p{
 }
 
 @media screen and (min-width: 720px){
-    section.ahri.stars > p{
+    .ahri.stars > p, .ahri.stars > h3{
         margin-left: 200px;
     }
 
-    section.ahri.stars > h3{
+    .ahri.stars > h3{
         text-align: center;
     }
 
-    section.ahri.stars > img.sideimg{
+    .ahri.stars > img.sideimg{
         left: -34vw;
         transform: scale(2) translateY(5vw);
     }
@@ -237,17 +237,17 @@ section.stars > p, .intro > p{
 /*Akali*/
 
 @media screen and (min-width: 720px){
-    section.akali.stars > p{
+    .akali.stars > p, .akali.stars > h3{
         margin-right: 200px;
     }
-    section.akali.stars > h3{
+    .akali.stars > h3{
         text-align: center;
     }
 }
 
 /*When the screen is small*/
 @media screen and (max-width: 720px){
-section.akali.stars > img.sideimg{
+.akali.stars > img.sideimg{
     width: 500%;
     left: -200vw;
     transform: translateY(-55vw);
@@ -256,7 +256,7 @@ section.akali.stars > img.sideimg{
 
 /*When the screen is big*/
 @media screen and (min-width: 720px){
-    section.akali.stars > img.sideimg{
+    .akali.stars > img.sideimg{
         left:27vw;
         transform: scale(2) translateY(6vw);
     }
@@ -281,10 +281,10 @@ section.akali.stars > img.sideimg{
 }
 
 @media screen and (min-width: 720px){
-    section.evelynn.stars > p{
+    .evelynn.stars > p, .evelynn.stars > h3{
         margin-left: 200px;
     }
-    section.evelynn.stars > h3{
+    .evelynn.stars > h3{
         text-align: center;
     }
 }
@@ -311,10 +311,10 @@ section.akali.stars > img.sideimg{
 
 /*When the screen is big*/
 @media screen and (min-width: 720px){
-    section.kaisa.stars > p{
+    .kaisa.stars > p, .kaisa.stars > h3{
         margin-right: 200px;
     }
-    section.kaisa.stars > h3{
+    .kaisa.stars > h3{
         text-align: center;
     }
 
