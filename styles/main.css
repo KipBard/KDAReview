@@ -303,6 +303,7 @@ section.akali.stars > img.sideimg{
 
 /*Kai'sa*/
 
+/*When the screen is big*/
 @media screen and (min-width: 720px){
     section.kaisa.stars > p{
         margin-right: 200px;
@@ -310,11 +311,33 @@ section.akali.stars > img.sideimg{
     section.kaisa.stars > h3{
         text-align: center;
     }
+
+    .kaisa.stars > .sideimg{
+        transform: scale(2) translateX(1vw) translateY(10vw);
+    }
 }
 
+/*When the screen is small*/
+@media screen and (max-width: 720px){
+    section.kaisa.stars > img.sideimg{
+        width: 500%;
+        left: -200vw;
+        transform: translateY(-18vw) translateX(16vw);
+    }
+}
+
+.kaisa.quoteSection{
+    height: 47vw;
+    display: flex;
+}
+
+.kaisa > .quoteimg{
+    transform: scale(1.4);
+}
 
 .kaisa > .quotetext{
-    padding-top: 8vw;
-    padding-left: 0px;
-    padding-right: 40px;
+    padding: 0px;
+    margin: auto auto;
+    font-size: 5vw;
+    color: #9154ff;
 }
