@@ -265,6 +265,10 @@ section.akali.stars > img.sideimg{
 
 /*Evelynn*/
 
+.quoteSection.evelynn{
+    display: flex;
+}
+
 .quoteSection.evelynn > img.quoteimg {
     transform: scale(1.3) translateX(7vw);
     filter: brightness(100%) blur(3px);
@@ -272,6 +276,8 @@ section.akali.stars > img.sideimg{
 
 .evelynn > .quotetext {
     color: #b319b3;
+    margin: auto auto;
+    padding: 0px 20px;
 }
 
 @media screen and (min-width: 720px){
@@ -336,7 +342,7 @@ section.akali.stars > img.sideimg{
 }
 
 .kaisa > .quotetext{
-    padding: 0px;
+    padding: 0px 20px;
     margin: auto auto;
     font-size: 5vw;
     color: #9154ff;
